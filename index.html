@@ -7,40 +7,49 @@
     <link rel="stylesheet" href="style.css">
     <title>Tic tac toe</title>
 </head>
-<body>
-    <header>
-        <H1>Tic Tac Toe</H1>
-    </header>
-    
-    <main>
-        <h3> Choose your mark/info text here</h3>
-        <button class="mark" id="xmark">X</button>
-        <button class="mark" id="omark">O</button>
-        
-        <div class="gameboard">
-        <table>
-		    <tr>
-			    <td class="cell" id="0"></td>
-			    <td class="cell" id="1"></td>
-			    <td class="cell" id="2"></td>
-		    </tr>
-		    <tr>
-			    <td class="cell" id="3"></td>
-			    <td class="cell" id="4"></td>
-			    <td class="cell" id="5"></td>
-		    </tr>
-		    <tr>
-			    <td class="cell" id="6"></td>
-			    <td class="cell" id="7"></td>
-			    <td class="cell" id="8"></td>
-		    </tr>
-	    </table>
 
+    <header>
+        <h1 class="text-center mt-4">Tic<span class="mid-title">Tac</span>Toe</h2>
+        <h5 class="text-center"> Enter players' names and click play to start the game!</h5>
+    </header>
+    <main>
+      <form class="player-info mb-4">
+        <div class="form-group">
+          <label for="player1">Player 1 (X)</label>
+          <input type="text" class="form-control" id="player1" placeholder="Name of player 1">
         </div>
-        
+  
+        <div class="form-group">
+          <label for="player2">Player 2 (O)</label>
+          <input type="text" class="form-control" id="player2" placeholder="Name of player 2">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Play</button>
+      </form>
+      <div class="col-4 offset-4 place hidden">
+      <div class="alert alert-primary game-status text-center">
+        <h4>Board:</h4>
+      </div>
+  
+      <div class="container mx-auto">
+        <div id="board">
+          <div class="cell text-center display-4"></div>
+          <div class="cell text-center display-4"></div>
+          <div class="cell text-center display-4"></div>
+          <div class="cell text-center display-4"></div>
+          <div class="cell text-center display-4"></div>
+          <div class="cell text-center display-4"></div>
+          <div class="cell text-center display-4"></div>
+          <div class="cell text-center display-4"></div>
+          <div class="cell text-center display-4"></div>
+        </div>
+      </div>
+      <button id="reset" class="mt-4 text-center btn btn-primary">Restart</button>
     </main>
-    <footer>Credit to creator</footer>
-    
+    <footer>
+
+    </footer>
     <script src="script.js"></script>
-</body>
-</html>
+  </body>
+  
+  </html>
