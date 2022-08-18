@@ -37,7 +37,7 @@ const playerFactory = (name, mark) => {
 				[1, 4, 7],
 				[2, 5, 8],
 				[0, 4, 8],
-				[2, 4, 6],
+				[2, 4, 6]
 			];
 
 			winArrays.forEach((combo) => {
@@ -116,7 +116,7 @@ const playerFactory = (name, mark) => {
 			}
 		});
 
-		resetBton.addEventListener('click', () => {
+		resetBtn.addEventListener('click', () => {
 			document.querySelector('.game-status').textContent = 'Board: ';
 			document.querySelector('#player1').value = '';
 			document.querySelector('#player2').value = '';
