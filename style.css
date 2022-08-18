@@ -3,7 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     height: 270px;
-    width: 245px;
+    width: 270px;
+    align-content: space-around;
+    justify-content: space-around;
   }
   
   .cell {
